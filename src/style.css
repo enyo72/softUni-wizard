@@ -39,5 +39,9 @@ padding: 30px;
 }
 
 .wizard {
-  background-image: url();
+    position: absolute;
+    width: 150px;
+    height: 200px;
+    background-image: url(./images/fire_wizard__wizard101_redesign__by_siturba_dfrqpw6-pre.jpg);
+    background-size: cover;
 }
