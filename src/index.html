@@ -16,10 +16,14 @@
         const gameStart = document.querySelector('.game-start');
         const gameArea = document.querySelector('.game-area');
         const gameOver = document.querySelector('.game-over');
-        const gameScore = document.querySelector('.game-score');
-
+        const gameScocre = document.querySelector('.game-score');
+       
         gameStart.addEventListener('click', onGameStart);
+        document.addEventListener('keydown', onKeyDown);
+        document.addEventListener('keyUp', onKeyUp);
 
+        let keys = {};
+        
         function onGameStart () {
             gameStart.classList.add('hide');
 
@@ -28,9 +32,23 @@
             wizard.style.top = '200px';
             wizard.style.left = '300px';
             gameArea.appendChild(wizard);
-            
 
-           
+            let request = window.requestAnimationFrame(gameAction);
+            
+            }
+
+        function gameAction() {
+
+            window.requestAnimationFrame(gameAction);
+        }
+
+        function onKeyDown(e) {
+            keys[e.code] = true;
+            
+        }
+
+        function onKeyUp(e) {
+            keys[e.code] = false;
         }
         
         
