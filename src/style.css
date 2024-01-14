@@ -15,10 +15,16 @@ body {
 position: absolute;
 width: 50%;
 background-color: greenyellow;
-top: 200px;
-left: 0px;
+top: 100px;
+left: 25%;
 z-index: 1;
 text-align: center;
-padding: 50px;
+padding: 30px;
 
+}
+
+.score {
+    background-color: black;
+    color: white;
+    text-align: center;
 }
