@@ -21,7 +21,12 @@
         gameStart.addEventListener('click', onGameStart);
 
         function onGameStart () {
-            alert ('Game started!')
+            gameStart.classList.add('hide');
+
+            const wizard = document.createElement('div');
+            wizard.classList.add('wizard');
+            
+           
         }
         
         

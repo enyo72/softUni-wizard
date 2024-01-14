@@ -27,9 +27,17 @@ padding: 30px;
 
 }
 
+.hide {
+    display: none;
+}
+
 .game-score {
-    position: relative;;
+    
     background-color: black;
     color: white;
     text-align: center;
+}
+
+.wizard {
+  background-image: url();
 }
